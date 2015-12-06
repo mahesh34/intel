@@ -20,8 +20,8 @@
 
 <target name="jar file">
 <echo> creating a jar file </echo>
-<mkdir dir= "classwork/jar file"/>
-<jar destfile= "classwork/jar file/work.jar" basedir="."/>
+<mkdir dir= "homework/jar file"/>
+<jar destfile= "homework/jar file/work.jar" basedir="."/>
 
 </target>
 </project>
