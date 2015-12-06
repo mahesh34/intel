@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<project default="info" name="code force">
+
+<target name="info" depends="run">
+<echo>info file extended</echo>
+</target>
+
+
+<target name="compile" depends="jar file">
+<javac srcdir="./work"
+       destdir="./work" includeantruntime="false"/>
+</target>
+
+<target name="run"  depends="compile">
+<java classname="code">
+<classpath path="work"/>
+</java>
+</target>
+
+<target name="jar file">
+<echo> creating a jar file </echo>
+<mkdir dir= "classwork/jar file"/>
+<jar destfile= "classwork/jar file/work.jar" basedir="."/>
+
+</target>
+</project>
+
